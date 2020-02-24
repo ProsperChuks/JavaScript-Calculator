@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <div class="container-fluid jumbotron">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="omrs-input-group">
+                        <label class="omrs-input-underlined">
+                          <input required id="value1" type="number">
+                          <span class="omrs-input-label"></span>
+                            <span class="omrs-input-helper">First Value</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="text-center">
+                        <select id="operator">
+                            <optgroup label="Operators">
+                                <option value="+">+</option>
+                                <option value="-">-</option>
+                                <option value="*">*</option>
+                                <option value="/">/</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="omrs-input-group">
+                        <label class="omrs-input-underlined">
+                          <input required id="value2" type="number">
+                          <span class="omrs-input-label"></span>
+                            <span class="omrs-input-helper">Second Value</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="text-center">
+                        <textarea id="solution" class="form-control-lg" name="solution" readonly="" inputmode="numeric"></textarea><br>
+                        <button onclick="calculate()" class="btn btn-dark">=</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
